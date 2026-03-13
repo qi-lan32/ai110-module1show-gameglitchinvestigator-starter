@@ -25,13 +25,13 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- The purpose of this game is to explore debugging with the help of AI, experiment and understand the reliability of AI in providing solutions and tips in debugging, and learn how we can utilize this tool to help us with debug.
+- Most of the bugs found were logical bugs in the game: inaccurate hints according to secret number, out of attempts warning message showing beforehand, secret number is out of range from game difficulty, or new game button fail to refresh.
+- The fixes were mainly correctly the structure of the if-conditions checks (for inaccurate hints), wrong initial value, wrong variable assignment (out of range secret number), and missing line to reset the game status (new game fail to refresh).
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+-  [![alt text](image.png)]
 
 ## 🚀 Stretch Features
 

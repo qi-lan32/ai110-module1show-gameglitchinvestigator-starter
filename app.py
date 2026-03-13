@@ -46,7 +46,7 @@ st.subheader("Make a guess")
 
 st.info(
     f"Guess a number between {low} and {high}. "   #issue: range does not change according to difficulty
-    f"Attempts left: {attempt_limit - st.session_state.attempts}"
+    f"Total attempts: {attempt_limit}"
 )
 
 with st.expander("Developer Debug Info"):
@@ -86,6 +86,8 @@ if st.session_state.status != "playing":
 
 if submit:
     st.session_state.attempts += 1
+
+    st.info(f"Attempts left: {attempt_limit - st.session_state.attempts}")
 
     ok, guess_int, err = parse_guess(raw_guess)
 
